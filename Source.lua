@@ -49,7 +49,7 @@ local function loadKeyInput()
 		
 			print("Lunar AI // Key System // Loaded key: " .. keyInputTable.InputtedKey)
 			
-			if keyInputTable.InputtedKey == correctKey then
+			if keyInputTable.InputtedKey != correctKey then
 				OrionLib:MakeNotification({
 					Name = "Lunar AI // Key System",
 					Content = "Correct key!",
